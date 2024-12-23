@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Grid layout for the service-tile */
+        .service-tile {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(23%, 4fr));
+        }
+
+        @media (max-width: 768px) {
+            .service-tile {
+                grid-template-columns: repeat(auto-fill, minmax(48%, 2fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-tile {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+        }
+
+        /* Ensure that .col-ser behaves correctly */
+        .col-ser {
+            border-radius: 10px;
+            position: relative;
+            background: #000;
+            width: 100%;
+            height: auto;
+        }
+
+        .col-ser>img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+        }
+
+        .img-wrap {
+            position: relative;
+            border-radius: 10px 10px 0 0;
+            height: 230px;
+        }
+
+        .img-wrap img {
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .col-ser .readmore-cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2d2727;
+            border-radius: 100px;
+            border: 1px solid #2D2727;
+            max-width: 150px;
+            width: 100%;
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            transition: inherit;
+            letter-spacing: 0em;
+            margin: 0px 0px 0px 4px;
+            font-family: 'madefor-text-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif';
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            color: #FFFFFF;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-ser .readmore-cta svg {
+            fill: #fff;
+            width: 15px;
+            height: 15px;
+        }
+
+        .only-content {
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .only-content img {
+            margin-top: -38px;
+            background: #fff;
+            border-radius: 50px;
+            padding: 5px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="service-tile">
+        <div class="col-ser">
+            <div class="img-wrap">
+                <a class="readmore-cta" href="https://www.acerair.com.au/services">READ MORE <span>
+                        <svg data-bbox="19.5 21.8 161 156.4" viewBox="0 0 200 200" height="200" width="200"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path d="M180.5 57.7v120.5H64.8v-19.3H147L19.5 35.7l13.4-13.9 128.2 124V57.7h19.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span></a>
+                <img
+                    src="https://static.wixstatic.com/media/3c3d3c_110120aabbba4fe59ed336b8629c251f~mv2.jpg/v1/fill/w_410,h_307,q_90/3c3d3c_110120aabbba4fe59ed336b8629c251f~mv2.webp">
+            </div>
+            <div class="only-content">
+                <img src="https://static.wixstatic.com/media/d7310f_5a810ee982ca421aa3e054e4b443b4ed~mv2.jpg">
+                <h2>CONSTRUCTION</h2>
+                <p>
+                    We design, engineer and construct completely bespoke solutions for every type of large-scale
+                    project. Our Construction Team specialises in maximising efficiency and performance, no matter the
+                    size or complexity of the job. </p>
+            </div>
+        </div>
+
+
+        <div class="col-ser">
+            <div class="img-wrap">
+                <a class="readmore-cta" href="https://www.acerair.com.au/services">READ MORE <span>
+                        <svg data-bbox="19.5 21.8 161 156.4" viewBox="0 0 200 200" height="200" width="200"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path d="M180.5 57.7v120.5H64.8v-19.3H147L19.5 35.7l13.4-13.9 128.2 124V57.7h19.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span></a>
+                <img
+                    src="https://static.wixstatic.com/media/3c3d3c_636ada195d254efe949f96c3caa0efc7~mv2.jpg/v1/fill/w_409,h_307,q_90/3c3d3c_636ada195d254efe949f96c3caa0efc7~mv2.webp">
+            </div>
+            <div class="only-content">
+                <img src="https://static.wixstatic.com/media/d7310f_684733a40e2c421992fb8bc15c63580f~mv2.jpg">
+                <h2>LIGHT COMMERICAL</h2>
+                <p>
+
+                    We offer complete design and construct services for new building fit-outs and existing structures.
+                    Whether it's starting from scratch, a retro-fit or a replacement, we provide bespoke service in the
+                    most cost-savvy and efficient way. </p>
+            </div>
+        </div>
+
+
+        <div class="col-ser">
+            <div class="img-wrap">
+                <a class="readmore-cta" href="https://www.acerair.com.au/services">READ MORE <span>
+                        <svg data-bbox="19.5 21.8 161 156.4" viewBox="0 0 200 200" height="200" width="200"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path d="M180.5 57.7v120.5H64.8v-19.3H147L19.5 35.7l13.4-13.9 128.2 124V57.7h19.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span></a>
+                <img
+                    src="https://static.wixstatic.com/media/3c3d3c_831bff65719142a2a6fcad04af98efb7~mv2.jpg/v1/fill/w_410,h_307,q_90/3c3d3c_831bff65719142a2a6fcad04af98efb7~mv2.webp">
+            </div>
+            <div class="only-content">
+                <img src="https://static.wixstatic.com/media/d7310f_2212665cca58484abfc5862e9cc633bf~mv2.jpg">
+                <h2>SERVICE</h2>
+                <p>
+
+                    Our easy-to-deal with experts are on call 24/7 to provide top-notch maintenance, repair and service
+                    support. Our team know the importance of keeping your air flowing cleanly and efficiently with the
+                    least amount of downtime possible. </p>
+            </div>
+        </div>
+
+
+        <div class="col-ser">
+            <div class="img-wrap">
+                <a class="readmore-cta" href="https://www.acerair.com.au/services">READ MORE <span>
+                        <svg data-bbox="19.5 21.8 161 156.4" viewBox="0 0 200 200" height="200" width="200"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                            <g>
+                                <path d="M180.5 57.7v120.5H64.8v-19.3H147L19.5 35.7l13.4-13.9 128.2 124V57.7h19.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span></a>
+                <img
+                    src="https://static.wixstatic.com/media/3c3d3c_c6032861f5e444f9a78a2443e79f1309~mv2.jpg/v1/fill/w_409,h_307,q_90/3c3d3c_c6032861f5e444f9a78a2443e79f1309~mv2.webp">
+            </div>
+            <div class="only-content">
+                <img src="https://static.wixstatic.com/media/d7310f_7ebb61c2a1db45a0adf63505aa653a01~mv2.jpg">
+                <h2>BESPOKE RESIDENTIAL</h2>
+                <p>
+
+                    We use our commercial knowledge and expertise to develop bespoke air conditioning solutions for
+                    premium builds and renovations. Builder or client, we service both. </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
